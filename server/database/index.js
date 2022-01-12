@@ -6,6 +6,7 @@ mongoose.connect(
 );
 
 const db = mongoose.connection;
+
 db.on('open', () => {
   console.log('database running');
 });
